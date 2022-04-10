@@ -1,8 +1,8 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Tests\Feature;
+namespace Becommerce\PostmanGenerator\Tests\Feature;
 
-use AndreasElia\PostmanGenerator\Tests\TestCase;
+use Becommerce\PostmanGenerator\Tests\TestCase;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
 

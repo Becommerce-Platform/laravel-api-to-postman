@@ -1,22 +1,22 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator;
+declare(strict_types=1);
 
-use AndreasElia\PostmanGenerator\Commands\ExportPostmanCommand;
+namespace Becommerce\PostmanGenerator;
+
+use Becommerce\PostmanGenerator\Commands\ExportPostmanCommand;
 use Illuminate\Support\ServiceProvider;
 
 class PostmanGeneratorServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any package services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/api-postman.php' => config_path('api-postman.php'),
+                __DIR__ . '/../config/postman.php' => config_path('postman.php'),
             ], 'postman-config');
         }
 
@@ -25,13 +25,9 @@ class PostmanGeneratorServiceProvider extends ServiceProvider
 
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/api-postman.php', 'api-postman'
-        );
+        $this->mergeConfigFrom(__DIR__ . '/../config/postman.php', 'api-postman');
     }
 }

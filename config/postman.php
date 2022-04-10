@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'enable_formdata' => false,
+    'enable_form_data' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     |
     */
 
-    'formdata' => [
+    'form_data' => [
         // 'email' => 'john@example.com',
         // 'password' => 'changeme',
     ],

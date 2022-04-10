@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Tests\Fixtures;
+namespace Becommerce\PostmanGenerator\Tests\Fixtures;
 
 use Illuminate\Routing\Controller;
 

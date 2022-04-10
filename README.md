@@ -30,7 +30,7 @@ php artisan vendor:publish --provider="AndreasElia\PostmanGenerator\PostmanGener
 
 You can modify any of the `api-postman.php` config values to suit your export requirements.
 
-Click [here](/config/api-postman.php) to view the config attributes.
+Click [here](/config/postman.php) to view the config attributes.
 
 ## Usage
 

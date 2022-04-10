@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Tests\Fixtures;
+namespace Becommerce\PostmanGenerator\Tests\Fixtures;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\In;

@@ -1,14 +1,17 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Tests;
+namespace Becommerce\PostmanGenerator\Tests;
 
-use AndreasElia\PostmanGenerator\Tests\Fixtures\ExampleController;
+use Becommerce\PostmanGenerator\PostmanGeneratorServiceProvider;
+use Becommerce\PostmanGenerator\Tests\Fixtures\ExampleController;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders($app)
     {
-        return ['AndreasElia\PostmanGenerator\PostmanGeneratorServiceProvider'];
+        return [
+            PostmanGeneratorServiceProvider::class,
+        ];
     }
 
     protected function defineRoutes($router)
