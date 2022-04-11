@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'filename' => '{timestamp}_{app}_collection.json',
+    'filename_template' => '{timestamp}_{app}_collection.json',
 
     /*
     |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'structured' => false,
+    'use_prefix' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'auth_middleware' => 'auth:api',
+    'authentication_middleware' => 'auth:api',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'enable_form_data' => false,
+    'form_data_enabled' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -89,8 +89,8 @@ return [
     |
     */
 
-    'print_rules' => true, // @requires: 'enable_formdata' ===  true
-    'rules_to_human_readable' => true, // @requires: 'parse_rules' ===  true
+    'print_rules_enabled' => true, // @requires: 'enable_formdata' ===  true
+    'rules_to_human_readable_enabled' => true, // @requires: 'parse_rules' ===  true
 
     /*
     |--------------------------------------------------------------------------
